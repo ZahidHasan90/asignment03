@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rinterio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.14.2/dist/full.css" rel="stylesheet">
 </head>
-<body>
-    
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-green-600">Rinterio</div>
+            
+            <!-- Navigation Links -->
+            <ul class="flex space-x-8">
+                <li><a href="#" class="text-gray-800 hover:text-green-600">Home</a></li>
+                <li><a href="#" class="text-gray-800 hover:text-green-600">Services</a></li>
+                <li><a href="#" class="text-gray-800 hover:text-green-600">Portfolio</a></li>
+                <li><a href="#" class="text-gray-800 hover:text-green-600">Blogs</a></li>
+                <li><a href="#" class="text-gray-800 hover:text-green-600">Contact Us</a></li>
+            </ul>
+            
+            <!-- Search and Cart -->
+            <div class="flex items-center space-x-4">
+                <!-- Search Bar -->
+                <div class="relative">
+                    <input type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs">
+                    <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M12.9 14.32a7 7 0 111.414-1.414l4.823 4.823a1 1 0 01-1.415 1.414l-4.823-4.823zM14 7a5 5 0 10-10 0 5 5 0 0010 0z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Cart Icon -->
+                <button class="text-gray-800 hover:text-green-600 relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-4-8M7 13l4 8m6-8l-4 8M5 21h14a2 2 0 002-2v-1H3v1a2 2 0 002 2zM10 21a2 2 0 11-4 0m12 0a2 2 0 11-4 0" />
+                    </svg>
+                    <span class="badge badge-success absolute -top-2 -right-2">3</span>
+                </button>
+
+                <!-- Book Consult Button -->
+                <button class="btn btn-success">Book Consult</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-16 bg-white">
+        <div class="container mx-auto">
+            <img src="images/banner.png" alt="Barn House" class="mx-auto mb-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">A barn house of this design has a striking appearance</h1>
+            <p class="text-gray-600 mb-8">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <a href="#" class="btn btn-success">View Details</a>
+        </div>
+    </section>
+
+  
+
 </body>
 </html>
