@@ -33,14 +33,13 @@
     <nav class="bg-white shadow-md py-4">
         <div class="flex justify-between items-center px-6">
             <!-- Logo -->
-            <div class="flex items-center space-x-2">
-                <div class="flex items-center justify-center rounded-full h-12 w-12" style="background-color: #ABEF5F;">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                      </svg>
-                      
+            <div class="flex justify-center items-center mb-4">
+                <div class="bg-book text-black text-center rounded-full p-2">
+                    <svg class="w-5 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
                 </div>
-                <div class="text-3xl font-bold text-black">Rinterio</div>
+                <h1 class="text-2xl text-center  text-black  font-bold ml-2">Rinterio</h1>
             </div>
             
             <!-- Navigation Links -->
@@ -53,7 +52,7 @@
             </ul>
             
             <!-- Search and Cart -->
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center justify-center space-x-4">
                 <!-- Search Bar -->
                 <div class="relative">
                     <i class="fa-solid fa-magnifying-glass bg-gray-100 rounded-full p-2"></i>
@@ -63,12 +62,16 @@
                     <i class="fa-solid fa-cart-shopping h-6 w-6"></i>
                 </button>
                 <!-- Book Consult Button -->
-                <button class="text-black font-bold py-2 px-4 rounded-full hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-book" style="background-color: #ABEF5F;">
-                    Book Consult <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                      </svg>
-                      
-                </button>
+                <div>
+                    <a href="#" class="bg-book  text-white font-semibold py-2 px-4 rounded-full inline-flex items-center">
+                        Book Consult
+                        <svg class="w-5 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
             </div>
         </div>
     </nav>
@@ -218,7 +221,8 @@
   <!-- news section-->
     <section>
        
-        <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4">
+        
     <div class="bg-gray-50 py-10 px-4">
         <div class="text-center mb-8">
           <span class="text-lime-500 font-semibold">Rinterio News</span>
@@ -304,54 +308,90 @@
     <div class="container mx-auto px-4">
 
     <div class="bg-cover bg-center bg-no-repeat py-10 px-4" style="background-image: url('images/bg.jpg');">
-        <div class="bg-white bg-opacity-80 p-8 rounded-lg max-w-4xl mx-auto">
+        <div class="p-8 rounded-lg max-w-4xl mx-auto">
           <div class="text-center mb-8">
             <span class="text-lime-500 font-semibold">Let's Connect</span>
-            <h2 class="text-3xl font-bold mt-2">Let's Discuss Next Project</h2>
-            <p class="text-gray-500 mt-2">
-              The barn house captivates with its blend of rustic charm and modern sophistication, 
+            <h2 class=" text-black text-3xl font-bold mt-2">Let's Discuss Next Project</h2>
+            <p class="text-black mt-2">
+              The barn house captivates with its blend of rustic charm and modern sophistication, <br>
               featuring weathered wood, sleek metal accents.
             </p>
           </div>
       
           <form>
+        
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label class="block text-sm font-medium text-gray-700" for="first-name">First Name*</label>
-                <input type="text" id="first-name" class=" mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-lime-500 focus:border-lime-500 bg-white" placeholder="First Name">
+         
+                <input type="text" id="first-name" class=" input input-bordered w-full rounded-full bg-white" placeholder="First Name">
               </div>
               <div>
-                <label class="block text-sm font-medium text-gray-700" for="last-name">Last Name*</label>
-                <input type="text" id="last-name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-lime-500 focus:border-lime-500 bg-white" placeholder="Last Name">
+                                <input type="text" id="last-name" class="input input-bordered w-full rounded-full bg-white" placeholder="Last Name">
               </div>
               <div>
-                <label class="block text-sm font-medium text-gray-700" for="phone-number">Phone Number*</label>
-                <input type="text" id="phone-number" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-lime-500 focus:border-lime-500 bg-white" placeholder="Phone Number">
+                                <input type="text" id="phone-number" class="input input-bordered w-full rounded-full bg-white" placeholder="Phone Number">
               </div>
               <div>
-                <label class="block text-sm font-medium text-gray-700" for="email-number">Email Number*</label>
-                <input type="text" id="email-number" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-lime-500 focus:border-lime-500 bg-white" placeholder="Email">
+                            <input type="text" id="email-number" class="input input-bordered w-full rounded-full bg-white" placeholder="Email">
               </div>
             </div>
             <div class="mt-6">
-              <label class="block text-sm font-medium text-gray-700" for="message">Write your message here</label>
-              <textarea id="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-lime-500 focus:border-lime-500 bg-white" placeholder="Write your message here"></textarea>
+            
+              <textarea id="message" rows="4" class="  mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-lime-500 focus:border-lime-500 bg-white" placeholder="Write your message here"></textarea>
             </div>
             <div class="mt-8 text-center">
-              <button type="submit" class="bg-lime-500 hover:bg-lime-600 text-white font-semibold py-3 px-6 rounded-full inline-flex items-center">
-                Send Mail 
-                <svg class="w-4 h-4 ml-2 transform rotate-45" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M10.293 15.707a1 1 0 001.414 0l5-5a1 1 0 00-1.414-1.414L12 12.586V3a1 1 0 10-2 0v9.586l-3.293-3.293a1 1 0 00-1.414 1.414l5 5z" />
-                </svg>
+                <button type="submit" class="bg-book w-full  text-black font-semibold py-3 px-6 rounded-full flex justify-center items-center">
+                    Send Mail
+                    <svg class="w-5 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
               </button>
             </div>
           </form>
         </div>
       </div>
-      
-
     </div>
     </section>
+
+
+  <!-- Section -->
+  <section class="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-center md:text-left">
+    <!-- Logo and Description -->
+    <div class="mb-8 flex flex-col items-center">
+        <div class="flex justify-center items-center mb-4">
+            <div class="bg-book text-black text-center rounded-full p-2">
+                <svg class="w-5 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+            </div>
+            <h1 class="text-2xl text-center  text-white  font-bold ml-2">Rinterio</h1>
+        </div>
+        <p class="text-gray-400 text-center">
+            The barn house captivates with its blend of rustic charm and modern sophistication, <br>
+            featuring weathered wood, sleek metal accents.
+        </p>
+    </div>
+
+    <!-- Menu -->
+    <div class="flex flex-wrap justify-center md:justify-between items-center space-x-16">
+        <a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a>
+        <a href="#" class="text-gray-400 hover:text-white transition-colors">Services</a>
+        <a href="#" class="text-gray-400 hover:text-white transition-colors">Portfolio</a>
+        <a href="#" class="text-gray-400 hover:text-white transition-colors">Blogs</a>
+        <a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a>
+    </div>
+
+    <!-- Book Consult Button -->
+    <div class="mt-8">
+        <a href="#" class="bg-book text-black font-semibold py-2 px-4 rounded-full inline-flex items-center">
+            Book Consult
+            <svg class="w-5 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+        </a>
+    </div>
+    
+</section>
     
 </main>
 </body>
